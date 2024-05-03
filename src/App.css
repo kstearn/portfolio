@@ -1,38 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+  background-color: #B7B7A4;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  width: 70%;
+  height: 65%;
+  background-color: #F9F4F0;
+  font-family: Lexend;
+  border-radius: 5px;
+}
+
+#root {
+  height: 100%;
+
+}
+
 .App {
   text-align: center;
+  background-color: #F9F4F0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ProjectContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.homepage-content-container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 65%;
+}
+
+.main-textbox {
+  background-color: white;
+  border: 1px solid #CB997E;
+  border-radius: 15px;
+  width: 75%;
+  height: 60%;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.homepage-content-container .main-textbox {
+  height: 93%;
+
+}
+
+.contact-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  margin-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+nav a:link, 
+nav a:visited {
+  color: #6B705C;
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a:hover {
+  color: #B7B7A4;
+}
+
+h1 {
+  color: #6B705C;
+  font-size: 4.5em;
+  font-family: Lexend, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 0px 20px;
+  text-align: left;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.emphasis {
+  color: #c88a68;
+  font-weight: 600;
+}
+
+.project-image {
+  width: 20%;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+  min-width: 150px;
+}
+
+.ExperienceContainer {
+  margin-bottom: 40px;
+  height: auto;
+}
+
+.ExperienceContainer h3,
+.ExperienceContainer h4,
+.ExperienceContainer p {
+  margin: 0px;
+}
+
+.socials-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.SkillContainer {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 48%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.SkillContainer img {
+  width: 100px;
+  height: auto;
+}
+
+.SkillContainer h3 {
+  margin: 0;
+}
+
+.resume-button {
+  padding: 10px;
+  font-family: Lexend;
+  font-size: 0.8em;
+  font-weight: 500;
+  background-color: #d4ae9a;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
 }
